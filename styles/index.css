@@ -1,0 +1,68 @@
+/* global styles */
+@font-face {
+    font-family: 'proximaNova';
+    src: url(fonts/ProximaNova-Regular.ttf);
+}
+@font-face {
+    font-family: 'thinProximaNova';
+    src: url(fonts/Proxima\ Nova\ Thin.ttf);
+}
+@font-face {
+    font-family: 'boldProximaNova';
+    src: url(fonts/Proxima\ Nova\ Bold.ttf);
+}
+:root {
+    --navy: #284051;
+    --aqua: #67BFB6;
+    --white: #ffffff;
+}
+html, body {
+    margin:0;
+}
+/* nav bar styles */
+nav {
+    width: 100vw;
+    height: 7vh;
+    background: var(--navy);
+    top:0;
+    left: 0;
+    position: fixed;
+    z-index:9;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav #logo {
+    height: 5vh;
+    margin-left: 1vh;
+}
+nav #moreButton {
+    height: 5vh;
+    margin-right: 1vh;
+    background: none;
+    border: none;
+}
+nav #moreButtonImg {
+    height: 5vh
+}
+
+/* header styles */
+header {
+    margin-top: 7vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+header #heroImage {
+    height: 60vh;
+    width: auto;
+    justify-self: center;
+    overflow: hidden;
+    object-fit: cover;
+    object-position: 50% 50%;
+}
+header #floatingLogo {
+    position: absolute;
+    height: 30vh;
+}
