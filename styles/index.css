@@ -1,15 +1,15 @@
 /* global styles */
 @font-face {
     font-family: 'proximaNova';
-    src: url(fonts/ProximaNova-Regular.ttf);
+    src: url(/fonts/ProximaNovaRegular.ttf);
 }
 @font-face {
     font-family: 'thinProximaNova';
-    src: url(fonts/Proxima\ Nova\ Thin.ttf);
+    src: url(/fonts/ProximaNovaThin.ttf);
 }
 @font-face {
     font-family: 'boldProximaNova';
-    src: url(fonts/Proxima\ Nova\ Bold.ttf);
+    src: url(/fonts/ProximaNovaBold.ttf);
 }
 :root {
     --navy: #284051;
@@ -38,14 +38,37 @@ nav #logo {
 }
 nav #moreButton {
     height: 5vh;
-    margin-right: 1vh;
+    margin: 0 1vh 0 0;
     background: none;
     border: none;
 }
 nav #moreButtonImg {
     height: 5vh
 }
+nav #navButtonsDiv {
+    position:fixed;
+    top: 7vh;
+    left:0;
+    width: 100vw;
+    height: 42vh;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    background: var(--navy);
+}
+nav #navButtonsDiv a {
+    background: var(--navy);
+    height: 7vh;
+    width: 100vw;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    text-decoration: none;
+    margin: 0;
 
+}
 /* header styles */
 header {
     margin-top: 7vh;
