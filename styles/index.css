@@ -17,17 +17,17 @@
     --white: #ffffff;
 }
 html, body {
-    margin:0;
+    margin: 0;
 }
 /* nav bar styles */
 nav #navBar {
     width: 100vw;
     height: 7vh;
     background: var(--navy);
-    top:0;
+    top: 0;
     left: 0;
     position: fixed;
-    z-index:9;
+    z-index: 9;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -43,13 +43,13 @@ nav #navBar #moreButton {
     border: none;
 }
 nav #navBar #moreButtonImg {
-    height: 5vh
+    height: 5vh;
 }
 nav #navButtonsSection {
-    position:fixed;
-    z-index:8;
+    position: fixed;
+    z-index: 8;
     top: 7vh;
-    left:0;
+    left: 0;
     width: 100vw;
     height: 42vh;
     display: none;
@@ -58,12 +58,11 @@ nav #navButtonsSection {
     background: var(--navy);
     transition: transform 0.5s ease-in-out;
 }
-.navButtons-slide-out{
+.navButtons-slide-out {
     transform: translateY(-42vh);
 }
 .navButtons-slide-in {
     transform: translateY(0);
-    transition: transform 0.5s ease-in-out;
 }
 nav #navButtonsSection a {
     background: var(--navy);
