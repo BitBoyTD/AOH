@@ -1,7 +1,8 @@
 // toggle nav buttons function
-function toggleNavButtons() {
+function toggleNavButtons() { 
     navButtonsSection = document.getElementById("navButtonsSection");
-    if (navButtonsSection.style.display === "none") {
+    if (navButtonsSection.style.display === "none" ||
+    navButtonsSection.style.display === "") {
         navButtonsSection.style.display = "flex";
         setTimeout(() => {
             navButtonsSection.classList.add("navButtons-slide-in");
@@ -13,10 +14,6 @@ function toggleNavButtons() {
         }, 500); // Adjust the delay based on your transition duration
     }
 }
-
-
-
-
 // moreButton
 moreButton = document.getElementById("moreButton");
 moreButton.addEventListener("touchstart", toggleNavButtons);
