@@ -1,6 +1,6 @@
 // toggle nav buttons function
 function toggleNavButtons() { 
-    navButtonsSection = document.getElementById("navButtonsSection");
+    const navButtonsSection = document.getElementById("navButtonsSection");
     if (navButtonsSection.style.display === "none" ||
     navButtonsSection.style.display === "") {
         navButtonsSection.style.display = "flex";

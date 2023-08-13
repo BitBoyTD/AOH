@@ -1,15 +1,19 @@
 /* global styles */
 @font-face {
-    font-family: 'proximaNova';
-    src: url(/fonts/ProximaNovaRegular.ttf);
+    font-family: 'zillaSlab';
+    src: url(fonts/ZillaSlab-Regular.ttf);
 }
 @font-face {
-    font-family: 'thinProximaNova';
-    src: url(/fonts/ProximaNovaThin.ttf);
+    font-family: 'zillaSlabItalic';
+    src: url(fonts/ZillaSlab-Italic.ttf);
 }
 @font-face {
-    font-family: 'boldProximaNova';
-    src: url(/fonts/ProximaNovaBold.ttf);
+    font-family: 'nunito';
+    src: url(fonts/Nunito-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: 'nunitoItalic';
+    src: url(fonts/Nunito-Italic-VariableFont_wght.ttf);
 }
 :root {
     --navy: #284051;
@@ -75,6 +79,10 @@ nav #navButtonsSection a {
     color: var(--white);
     text-decoration: none;
     margin: 0;
+    font-family: 'nunito', sans-serif;
+}
+nav #navButtonsSection a:active {
+    background: var(--aqua);
 }
 /* header styles */
 header {
