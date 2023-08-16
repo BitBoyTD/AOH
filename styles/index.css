@@ -48,6 +48,10 @@ nav #navBar #moreButton {
 }
 nav #navBar #moreButtonImg {
     height: 5vh;
+    transition: filter 0.5s;
+}
+.moreButtonWhite {
+    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) hue-rotate(0deg);
 }
 nav #navButtonsSection {
     position: fixed;
