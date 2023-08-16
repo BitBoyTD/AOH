@@ -1,11 +1,7 @@
 /* global styles */
 @font-face {
-    font-family: 'zillaSlab';
-    src: url(fonts/ZillaSlab-Regular.ttf);
-}
-@font-face {
-    font-family: 'zillaSlabItalic';
-    src: url(fonts/ZillaSlab-Italic.ttf);
+    font-family: 'robotoSlab';
+    src: url(fonts/RobotoSlab-VariableFont_wght.ttf);
 }
 @font-face {
     font-family: 'nunito';
@@ -83,7 +79,7 @@ nav #navButtonsSection a {
     color: var(--white);
     text-decoration: none;
     margin: 0;
-    font-family: 'nunito', sans-serif;
+    font-family: 'robotoSlab', sans-serif;
 }
 nav #navButtonsSection a:active {
     background: var(--aqua);
