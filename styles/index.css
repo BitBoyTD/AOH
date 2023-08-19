@@ -19,6 +19,9 @@
 html, body {
     margin: 0;
 }
+button:hover {
+    cursor: pointer;
+}
 /* nav bar styles */
 nav #navBar {
     width: 100vw;
