@@ -19,4 +19,4 @@ function toggleNavButtons() {
 }
 // moreButton
 moreButton = document.getElementById("moreButton");
-moreButton.addEventListener("touchstart", toggleNavButtons);
+moreButton.addEventListener("click", toggleNavButtons);

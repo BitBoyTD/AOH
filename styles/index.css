@@ -98,7 +98,7 @@ header #heroImage {
     justify-self: center;
     overflow: hidden;
     object-fit: cover;
-    object-position: 50% 50%;
+    object-position: 90% 50%;
 }
 header #floatingLogo {
     position: absolute;
