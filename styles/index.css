@@ -22,8 +22,20 @@ html, body {
 button:hover {
     cursor: pointer;
 }
+.noSelect {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.noSelect:focus {
+    outline: none !important;
+}
 /* nav bar styles */
-nav #navBar {
+#navBar {
     width: 100vw;
     height: 7vh;
     background: var(--navy);
@@ -35,24 +47,27 @@ nav #navBar {
     align-items: center;
     justify-content: space-between;
 }
-nav #navBar #logo {
+#logo {
     height: 5vh;
     margin-left: 1vh;
 }
-nav #navBar #moreButton {
+#logo:active {
+    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) hue-rotate(0deg);
+}
+#moreButton {
     height: 5vh;
     margin: 0 1vh 0 0;
     background: none;
     border: none;
 }
-nav #navBar #moreButtonImg {
+#moreButtonImg {
     height: 5vh;
     transition: filter 0.5s;
 }
-.moreButtonWhite {
+.filterWhite {
     filter: brightness(0) saturate(100%) invert(100%) sepia(0%) hue-rotate(0deg);
 }
-nav #navButtonsSection {
+#navButtonsSection {
     position: fixed;
     z-index: 8;
     top: 7vh;
@@ -71,7 +86,7 @@ nav #navButtonsSection {
 .navButtons-slide-in {
     transform: translateY(0);
 }
-nav #navButtonsSection a {
+#navButtonsSection a {
     background: var(--navy);
     height: 7vh;
     width: 100vw;
@@ -84,7 +99,7 @@ nav #navButtonsSection a {
     margin: 0;
     font-family: 'robotoSlab', sans-serif;
 }
-nav #navButtonsSection a:active {
+#navButtonsSection a:active {
     background: var(--aqua);
 }
 /* header styles */
@@ -95,7 +110,7 @@ header {
     align-items: center;
     position: relative;
 }
-header #heroImage {
+#heroImage {
     height: 60vh;
     width: auto;
     justify-self: center;
@@ -103,7 +118,7 @@ header #heroImage {
     object-fit: cover;
     object-position: 90% 50%;
 }
-header #floatingLogo {
+#floatingLogo {
     position: absolute;
     height: 30vh;
 }
