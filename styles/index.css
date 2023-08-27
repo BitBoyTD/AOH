@@ -109,6 +109,7 @@ header {
     justify-content: center;
     align-items: center;
     position: relative;
+    background-color: black;
 }
 #heroImage {
     height: 60vh;
@@ -117,6 +118,7 @@ header {
     overflow: hidden;
     object-fit: cover;
     object-position: 90% 50%;
+    filter: blur(5px);
 }
 #floatingLogo {
     position: absolute;
