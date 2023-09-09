@@ -46,15 +46,12 @@ button:hover {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    box-shadow: 0 0 20px;
 }
 #logo {
     height: 5vh;
     margin-left: 1vh;
 }
-#logo:active {
-    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) hue-rotate(0deg);
-}
+
 #moreButton {
     position: relative;
     height: 5vh;
@@ -62,17 +59,17 @@ button:hover {
     margin: 0 1vh 0 0;
     background: none;
     border: none;
-    transition: filter 0.5s ease-in-out;
+    transition: filter 0.3s ease-in-out;
 }
 .topBar {
   position: absolute;
   width: 100%;
   top: 5%;
   right: 0;
-  transition: transform 0.5s ease-in-out, top 0.5s ease-in-out;
+  transition: transform 0.3s ease-in-out, top 0.3s ease-in-out;
 }
 .topBarX {
-  top: 39.5%;
+  top: 40%;
   transform: rotate(-45deg);
   position: absolute;
   width: 100%;
@@ -82,14 +79,14 @@ button:hover {
   position: absolute;
   width: 100%;
   right: 0;
-  top: 39.5%;
-  transition: opacity 0.5s ease-in-out;
+  top: 40%;
+  transition: opacity 0.3s ease-in-out;
 }
 .midBarX {
     position: absolute;
     width: 100%;
     right: 0;
-    top: 39.5%;
+    top: 40%;
     opacity: 0;
 }
 .botBar {
@@ -97,13 +94,13 @@ button:hover {
   width: 100%;
   right: 0;
   top: 75%;
-  transition: transform 0.5s ease-in-out, top 0.5s ease-in-out;
+  transition: transform 0.3s ease-in-out, top 0.3s ease-in-out;
 }
 .botBarX {
     position: absolute;
     width: 100%;
     right: 0;
-    top: 39.5%;
+    top: 40%;
     transform: rotate(45deg);
 }
 .filterWhite {
@@ -116,11 +113,12 @@ button:hover {
     left: 0;
     width: 100vw;
     height: 42vh;
-    display: none;
+    display: flex;
     flex-direction: column;
     align-items: center;
     background: var(--navy);
-    transition: transform 0.5s ease-in-out;
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0 0 20px;
 }
 .navButtons-slide-out {
     transform: translateY(-42vh);
