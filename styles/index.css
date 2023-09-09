@@ -56,14 +56,55 @@ button:hover {
     filter: brightness(0) saturate(100%) invert(100%) sepia(0%) hue-rotate(0deg);
 }
 #moreButton {
+    position: relative;
     height: 5vh;
+    width: 5vh;
     margin: 0 1vh 0 0;
     background: none;
     border: none;
+    transition: filter 0.5s ease-in-out;
 }
-#moreButtonImg {
-    height: 5vh;
-    transition: filter 0.5s;
+.topBar {
+  position: absolute;
+  width: 100%;
+  top: 5%;
+  right: 0;
+  transition: transform 0.5s ease-in-out, top 0.5s ease-in-out;
+}
+.topBarX {
+  top: 39.5%;
+  transform: rotate(-45deg);
+  position: absolute;
+  width: 100%;
+  right: 0;
+}
+.midBar {
+  position: absolute;
+  width: 100%;
+  right: 0;
+  top: 39.5%;
+  transition: opacity 0.5s ease-in-out;
+}
+.midBarX {
+    position: absolute;
+    width: 100%;
+    right: 0;
+    top: 39.5%;
+    opacity: 0;
+}
+.botBar {
+  position: absolute;
+  width: 100%;
+  right: 0;
+  top: 75%;
+  transition: transform 0.5s ease-in-out, top 0.5s ease-in-out;
+}
+.botBarX {
+    position: absolute;
+    width: 100%;
+    right: 0;
+    top: 39.5%;
+    transform: rotate(45deg);
 }
 .filterWhite {
     filter: brightness(0) saturate(100%) invert(100%) sepia(0%) hue-rotate(0deg);
